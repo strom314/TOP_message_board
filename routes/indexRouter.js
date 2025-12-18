@@ -29,5 +29,9 @@ indexRouter.post("/new", (req, res) => {
 
   res.redirect("/");
 });
+indexRouter.get("/:messageId", (req, res) => {
+  const messageIndex = req.params.messageId;
+  res.render("message", { message: messages[messageIndex] });
+});
 
 module.exports = indexRouter;
