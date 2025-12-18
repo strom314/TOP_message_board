@@ -24,7 +24,7 @@ indexRouter.post("/new", (req, res) => {
   messages.push({
     text: req.body.messageText,
     user: req.body.userName,
-    date: new Date(),
+    added: new Date(),
   });
 
   res.redirect("/");
