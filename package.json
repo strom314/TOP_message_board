@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/strom314/TOP_message_board#readme",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "ejs": "^3.1.10",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "fs": "^0.0.1-security",
+    "pg": "^8.16.3"
   }
 }
