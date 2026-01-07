@@ -18,10 +18,8 @@ async function postForm(req, res) {
 }
 
 async function getMessage(req, res) {
-  console.log(req.params.messageId);
-
   const message = await db.getMessage(req.params.messageId);
-  res.render("message", { message: message });
+  res.render("message", { message: message[0] });
 }
 
 module.exports = { getIndex, getForm, postForm, getMessage };

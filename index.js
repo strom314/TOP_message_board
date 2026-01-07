@@ -11,8 +11,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/", indexRouter);
 
-db.test();
-
 const PORT = 3000;
 
 app.listen(PORT, (error) => {

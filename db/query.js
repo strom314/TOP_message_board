@@ -21,6 +21,7 @@ async function getMessage(id) {
   const message = await pool.query(
     `SELECT * FROM message_board WHERE messageid=${id}`
   );
+
   return message.rows;
 }
 
